@@ -3,11 +3,10 @@
     display: grid;
     grid-template-columns: 1fr;
     margin: 0px 25px;
-    grid-gap: 0em
+    grid-gap: 0em;
 }
 
 .content {
-    margin-top: 30px;
     justify-self: start;
     width: 100%;
 }
@@ -28,21 +27,22 @@
 
 .heading {
     font-weight: bold;
-    margin-bottom: 30px;
+    margin: 15px 0px;
     font-size: 13px;
 }
 
 .info {
-    margin-bottom: 70px;
+    padding: 35px 0px;
     position: relative;
 }
 
 .label {
     position: absolute;
     left: -30px;
+    top: -4px;
     z-index: 1;
     color: #808080;
-    transition: top 2s;
+    transition: top 0.2s;
 }
 
 .input-text {
@@ -64,7 +64,10 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
 }
-
+.orgin > .info{
+    padding: 0px;
+    margin: 0px;
+}
 .country div {
     display: inline-block;
     color: #808080;
@@ -79,7 +82,7 @@
 .total-item-header {
     text-align: center;
     font-size: 13px;
-    margin: 5px;
+    margin: 0px;
     color: #A9A9A9;
 }
 
@@ -94,9 +97,9 @@
     width: 100%;
     font-size: 18px;
     outline: none;
-    margin-top: 5px;
     padding-bottom: 12px;
     border-bottom: 1px solid black;
+    margin: 10px 0px;
 }
 
 .country {
@@ -153,6 +156,7 @@
     bottom: -10px;
     right: 0px;
     left: -10px;
+    z-index: 2;
 }
 
 .cart-button {
@@ -172,11 +176,10 @@
     .container {
         margin-left: 200px;
         margin-right: 200px;
-        margin-top: 30px;
+        margin-top: 80px;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 2em;
     }
-
     .cart-button {
         padding: 10px 80px;
         margin: 10px;
